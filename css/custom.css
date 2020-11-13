@@ -32,7 +32,7 @@
 	height: 80px;
 	border-radius: 25px;
 }
-body {
+.site-index {
  background-image: url("images/bg.svg");
    -webkit-background-size: cover;
   -moz-background-size: cover;
