@@ -65,6 +65,28 @@
 	line-height: 36px;
 	margin: 1px 0;
 }
+.popular {
+	background-color: #CCCCCC ;
+	height:400px;
+	width: 100%;
+	margin-bottom: 90px;
+}
+
+.card {
+	padding: 20px;
+
+
+
+}
+.popular-loc {
+   padding: 40px;
+
+}
+.card-body {
+	padding-left: 10px;
+	margin: 5px;
+    width: 80px;
+    height: 100px;
 
 #titlebar.listing-titlebar span.listing-tag {
 	margin: 0;
