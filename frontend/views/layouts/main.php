@@ -2,12 +2,12 @@
 /* @var $this \yii\web\View */
 /* @var $content string */
 use yii\helpers\Html;
-use yii\helpers\Url;
-use yii\bootstrap4\Nav;
-use yii\bootstrap4\NavBar;
 use yii\widgets\Breadcrumbs;
 use frontend\assets\AppAsset;
 use common\widgets\Alert;
+use yii\bootstrap4\NavBar;
+use yii\bootstrap4\Nav;
+
 AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
@@ -20,24 +20,13 @@ AppAsset::register($this);
     <?php $this->registerCsrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <?php $this->head() ?>
+   <?php $this->head() ?>
 </head>
 <body>
 <?php $this->beginBody() ?>
-<script>
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-50px";
-  }
-  prevScrollpos = currentScrollPos;
-}
-</script>
-<div id="navbar">
-<?php
+
+<div class="wrap">
+    <?php
     NavBar::begin([
         'brandLabel' => Yii::$app->name,
         'brandUrl' => Yii::$app->homeUrl,
@@ -45,35 +34,14 @@ var currentScrollPos = window.pageYOffset;
             'class' => 'navbar navbar-expand-lg navbar-light bg-light fixed-top',
         ],
     ]);
-    $menuItems = [
-        ['label' => '<i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home', 'class'=>'login', 'url' => ['/site/index']],
-    ];
-    if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => '<i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp;Sign Up', 'url' => ['/site/signup']];
-        $menuItems[] = ['label' => '<i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;Login', 'url' => ['/site/login']];
-    } else {
-        $menuItems[] = ['label' => '<i class="fa fa-user" aria-hidden="true"></i>&nbsp;Profile', 'url' => ['/site/login']];
-        // $menuItems[] = ['label' => '<i class="fa fa-bell" aria-hidden="true"></i>&nbsp;Notifications', 'url' => ['/site/login']];
-        $menuItems[] = ['label' => '<i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;Messages', 'url' => ['/messages/index']];
-        $menuItems[] = ['label' => ''
-            . Html::beginForm(['/site/logout'], 'post')
-            . Html::submitButton(
-                '<i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;Logout (' . Yii::$app->user->identity->username . ')',
-                ['class' => 'btn btn-light logout']
-            )
-            . Html::endForm()
-        ];
-    }
     echo Nav::widget([
         'items' => [
-            ['label' => 'Home', 'url' => ['/site/index'],'options'=>['class'=>'nav-location']],
-            ['label' => 'Venues', 'url' => ['/listings/list-sidebar'],'options'=>['class'=>'navglobe-pright']],
-            ['label' => 'Service Providers', 'url' => ['/site/serviceproviders'],'options'=>['class'=>'navglobe-pright']],
-            ['label' => 'About', 'url' => ['/site/about'],'options'=>['class'=>'navglobe-pright']],
-            ['label' => 'Contact Us', 'url' => ['/site/contact'],'options'=>['class'=>'navglobe-pright']],
-                [
-                    'label' => '<i class="fa fa-globe fa-fw fa-lg"></i>',
-                    'options'=>['class'=>'nav-side'],
+            ['label' => 'Search By Location', 'url' => ['/listings/searchresult'],'options'=>['class'=>'nav-location']],
+            ['label' => 'Search By Company', 'url' => ['/listings/searchresult'],'options'=>['class'=>'navglobe-pright']],
+            ['label' => 'Service Providers', 'url' => ['/site/index'],'options'=>['class'=>'nav-location']],
+
+            [
+                'label' => '<i class="fa fa-globe fa-fw fa-lg"></i>',
                 'items' => [
                     ['label' => 'English US', 'url' => '#'],
                     ['label' => '$ USD', 'url' => '#'],
@@ -81,15 +49,12 @@ var currentScrollPos = window.pageYOffset;
             ],
             '&nbsp;&nbsp;',
             [
-                'label' => '<i class="fa fa-bars" aria-hidden="true"></i>&nbsp;&nbsp;  <i class="fa fa-user-circle-o" aria-hidden="true"></i>',
+                'label' => '<i class="fa fa-bars" aria-hidden="true"></i>&nbsp;&nbsp;<i class="fa fa-user-circle-o" aria-hidden="true"></i>',
                 'items' => [
-                    ['label' => 'Log in', 'url' => 'site/login'],
-                    '<div class="dropdown-divider"></div>',
-                    ['label' => 'Sign up', 'url' => 'site/signup'],
+                    ['label' => 'Sign-Up', 'url' => '#'],
+                    ['label' => 'Login', 'url' => '#'],
                 ],
-                'encodeLabels'=> false,
-                'items' => $menuItems,
-                'options'=>['class'=>'nav-button btn btn-outline-dark'],['class'=>'nav-side'],
+                'options'=>['class'=>'nav-button btn btn-outline-dark']
             ],
         ],
         'options' => ['class' => 'navbar-nav'],
@@ -97,6 +62,7 @@ var currentScrollPos = window.pageYOffset;
     ]);
     NavBar::end();
     ?>
+
     <div class="container-fluid">
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
@@ -105,8 +71,6 @@ var currentScrollPos = window.pageYOffset;
         <?= $content ?>
     </div>
 </div>
-              <!-- Footer
-================================================== -->
 <div id="footer" class="sticky-footer">
    <!-- Main -->
    <div class="container-fluid">
@@ -151,6 +115,15 @@ var currentScrollPos = window.pageYOffset;
       </div>
    </div>
 </div>
+
+<footer class="footer">
+    <div class="container">
+        <p class="pull-left">&copy; <?= Html::encode(Yii::$app->name) ?> <?= date('Y') ?></p>
+
+        <p class="pull-right"><?= Yii::powered() ?></p>
+    </div>
+</footer>
+
 <?php $this->endBody() ?>
 </body>
 </html>

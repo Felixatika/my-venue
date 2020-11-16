@@ -8,31 +8,25 @@ use Yii;
  * This is the model class for table "listings".
  *
  * @property int $listingsId
+ * @property int $lcId
  * @property int $listingsTypeId
  * @property string $listingName
- * @property string $videoUrl
  * @property float $basePrice
  * @property float $deposit
  * @property string $listingDesc
  * @property int $verificationStatus Status 0 represents available, status 1 represents unavailable
  * @property int $bookingStatus Status 0 represents available, status 1 represents unavailable
  * @property int $hasMaximumGuests Status 0 represents yes, status 1 represents no
- * @property int|null $maximumGuests
+ * @property int $maximumGuests
  * @property int $hasAmmenities Status 0 represents yes, status 1 represents no
- * @property string|null $keywords
+ * @property string $keywords
  * @property int $allowInstantBooking Status 0 represents true, status 1 represents false
- * @property int $phoneCode
- * @property string $listingPhone
- * @property string|null $website
- * @property string|null $email
- * @property string|null $facebook
- * @property string|null $twitter
- * @property string|null $instagram
  * @property int $createdBy
  * @property string $createdAt
  *
  * @property Booking[] $bookings
  * @property Bookmarks[] $bookmarks
+ * @property Listingscategories $lc
  * @property Listingstypes $listingsType
  * @property User $createdBy0
  * @property Listingsammenities[] $listingsammenities
@@ -40,9 +34,9 @@ use Yii;
  * @property Listingsimages[] $listingsimages
  * @property Listingslocations[] $listingslocations
  * @property Listingusers[] $listingusers
- * @property Llcategories[] $llcategories
  * @property Operatinghours[] $operatinghours
  * @property Reviews[] $reviews
+ * @property Venuetypes[] $venuetypes
  */
 class Listings extends \yii\db\ActiveRecord
 {
@@ -60,13 +54,13 @@ class Listings extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['listingsTypeId', 'listingName', 'videoUrl', 'basePrice', 'deposit', 'listingDesc', 'phoneCode', 'listingPhone', 'createdBy'], 'required'],
-            [['listingsTypeId', 'verificationStatus', 'bookingStatus', 'hasMaximumGuests', 'maximumGuests', 'hasAmmenities', 'allowInstantBooking', 'phoneCode', 'createdBy'], 'integer'],
+            [['lcId', 'listingsTypeId', 'listingName', 'basePrice', 'deposit', 'listingDesc', 'maximumGuests', 'keywords', 'createdBy'], 'required'],
+            [['lcId', 'listingsTypeId', 'verificationStatus', 'bookingStatus', 'hasMaximumGuests', 'maximumGuests', 'hasAmmenities', 'allowInstantBooking', 'createdBy'], 'integer'],
             [['basePrice', 'deposit'], 'number'],
-            [['listingDesc', 'keywords'], 'string'],
+            [['keywords'], 'string'],
             [['createdAt'], 'safe'],
-            [['listingName', 'videoUrl', 'website', 'email', 'facebook', 'twitter', 'instagram'], 'string', 'max' => 255],
-            [['listingPhone'], 'string', 'max' => 100],
+            [['listingName', 'listingDesc'], 'string', 'max' => 255],
+            [['lcId'], 'exist', 'skipOnError' => true, 'targetClass' => Listingscategories::className(), 'targetAttribute' => ['lcId' => 'lcId']],
             [['listingsTypeId'], 'exist', 'skipOnError' => true, 'targetClass' => Listingstypes::className(), 'targetAttribute' => ['listingsTypeId' => 'listingsTypeId']],
             [['createdBy'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['createdBy' => 'id']],
         ];
@@ -79,9 +73,9 @@ class Listings extends \yii\db\ActiveRecord
     {
         return [
             'listingsId' => 'Listings ID',
+            'lcId' => 'Lc ID',
             'listingsTypeId' => 'Listings Type ID',
             'listingName' => 'Listing Name',
-            'videoUrl' => 'Video Url',
             'basePrice' => 'Base Price',
             'deposit' => 'Deposit',
             'listingDesc' => 'Listing Desc',
@@ -92,13 +86,6 @@ class Listings extends \yii\db\ActiveRecord
             'hasAmmenities' => 'Has Ammenities',
             'keywords' => 'Keywords',
             'allowInstantBooking' => 'Allow Instant Booking',
-            'phoneCode' => 'Phone Code',
-            'listingPhone' => 'Listing Phone',
-            'website' => 'Website',
-            'email' => 'Email',
-            'facebook' => 'Facebook',
-            'twitter' => 'Twitter',
-            'instagram' => 'Instagram',
             'createdBy' => 'Created By',
             'createdAt' => 'Created At',
         ];
@@ -122,6 +109,16 @@ class Listings extends \yii\db\ActiveRecord
     public function getBookmarks()
     {
         return $this->hasMany(Bookmarks::className(), ['listingsId' => 'listingsId']);
+    }
+
+    /**
+     * Gets query for [[Lc]].
+     *
+     * @return \yii\db\ActiveQuery
+     */
+    public function getLc()
+    {
+        return $this->hasOne(Listingscategories::className(), ['lcId' => 'lcId']);
     }
 
     /**
@@ -195,16 +192,6 @@ class Listings extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Llcategories]].
-     *
-     * @return \yii\db\ActiveQuery
-     */
-    public function getLlcategories()
-    {
-        return $this->hasMany(Llcategories::className(), ['listingId' => 'listingsId']);
-    }
-
-    /**
      * Gets query for [[Operatinghours]].
      *
      * @return \yii\db\ActiveQuery
@@ -222,5 +209,15 @@ class Listings extends \yii\db\ActiveRecord
     public function getReviews()
     {
         return $this->hasMany(Reviews::className(), ['listingsId' => 'listingsId']);
+    }
+
+    /**
+     * Gets query for [[Venuetypes]].
+     *
+     * @return \yii\db\ActiveQuery
+     */
+    public function getVenuetypes()
+    {
+        return $this->hasMany(Venuetypes::className(), ['listingsId' => 'listingsId']);
     }
 }

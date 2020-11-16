@@ -1,0 +1,165 @@
+
+.navglobe-pright{
+	padding-right: 29px;
+}
+.nav-location{
+	padding-left: 20px;
+	margin-right: 50px;
+}
+.nav-button{
+	height: 50px;
+	border-radius: 25px;
+}
+/* .nav-button .btn-outline-dark {
+  background-color: yellow !important;
+} */
+
+.explore{
+	padding-top:200px;
+}
+.explore h1{
+   font-size: 90px;
+   line-height: 105px;
+   color: #000000;
+}
+.serchbar{
+	padding-top:180px;
+}
+.serchbar input{
+	height: 80px;
+	border-radius: 25px;
+}
+.serchbar button{
+	height: 80px;
+	border-radius: 25px;
+}
+/* body {
+ background-image: url("images/bg.svg");
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} */
+/* style the map */
+
+.map-row{
+    position: fixed !important;
+     margin-left: 40em; 
+
+
+}
+#search-results-map{
+    width:  480px;
+    height: 600px;
+    border-radius: 5px;
+    border:#000000;
+    
+  
+}
+/* searchbar */
+.nav-two li{
+	display: inline-flex;
+	padding: none;
+
+}
+.nav-two{
+	background-color: rgb(255,255,255,0.4) !important;
+	width: 100%;
+	height: 5em;
+	border-radius: 4em;
+}
+.nav-two button{
+ width: 6em;
+ height: 3em;
+ border-style: none;
+ font-size: 0.8em;
+ background-color: #0000;
+ border-radius: 2em;
+}
+.nav-two button:hover{
+	background-color: rgb(255,255,255, 0.5);
+}
+#search-button{
+	height: 3.6em;
+	width: 3.6em;
+	background-color: #FB8085;
+	margin-top: 2em;
+	border-radius: 2em;
+	margin-left: 2em;
+}
+#search-button:hover{
+background-color: #AA4465;
+}
+
+/* style listings */
+.card-row-ii{
+    width: max-content;
+}
+
+.filters button{
+    width: 7em;
+    height: 3em;
+    border-radius:2em;
+    margin-right:2em;
+}
+.filters button:active{
+    width: 5em;
+    height: 2em;
+    border-radius:1em;
+    margin-right:2em;
+}
+.card-row-filter p{
+    font-size: 2.5em;
+    color: rgb(31, 2, 31);
+}
+.filters{
+    display: inline-flex;
+}
+.form-group p{
+    text-align: center;
+}
+.form-check{
+    display: inline-block;
+    
+}
+.form-check div{
+    margin: 1em;
+}
+.card-body img{
+    height: 7em;
+    width: 100%; 
+}
+.card-link{
+    margin: 1em;
+    background-color: yellowgreen;
+    border-radius: 1em;
+    color: black;
+    padding: 0.2em;
+}
+.single-listing{
+    display: inline-flex;
+}
+.listing-info{
+     padding: 0.5em; 
+    display: inline-flex;
+}
+.listing-info i{ 
+    font-size: 1.5em;
+    margin-right: 0 !important;
+}
+.listing-info h5{
+    width: 10em;
+}
+.liketoggle i.fas {
+    color: red;
+  }
+
+.single-listing{
+    padding-top: 1em;
+}
+
+
+
+
+
+

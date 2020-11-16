@@ -11,15 +11,13 @@ use Yii;
  * @property int $listingId
  * @property string $address
  * @property string $country
- * @property string $countryRegion
+ * @property string $county
  * @property string $city
- * @property string|null $streetRoad
+ * @property string $street
  * @property float $lattitude
  * @property float $longitude
- * @property string|null $vicinity
- * @property string $createdAt
- *
- * @property Listing $listing
+ * @property string $vicinity
+ * @property int $createdAt
  */
 class Location extends \yii\db\ActiveRecord
 {
@@ -37,12 +35,10 @@ class Location extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['listingId', 'address', 'country', 'countryRegion', 'city', 'lattitude', 'longitude'], 'required'],
-            [['listingId'], 'integer'],
+            [['listingId', 'address', 'country', 'county', 'city', 'street', 'lattitude', 'longitude', 'vicinity', 'createdAt'], 'required'],
+            [['listingId', 'createdAt'], 'integer'],
             [['lattitude', 'longitude'], 'number'],
-            [['createdAt'], 'safe'],
-            [['address', 'country', 'countryRegion', 'city', 'streetRoad', 'vicinity'], 'string', 'max' => 255],
-            [['listingId'], 'exist', 'skipOnError' => true, 'targetClass' => Listing::className(), 'targetAttribute' => ['listingId' => 'listingId']],
+            [['address', 'country', 'county', 'city', 'street', 'vicinity'], 'string', 'max' => 255],
         ];
     }
 
@@ -56,23 +52,17 @@ class Location extends \yii\db\ActiveRecord
             'listingId' => 'Listing ID',
             'address' => 'Address',
             'country' => 'Country',
-            'countryRegion' => 'Country Region',
+            'county' => 'County',
             'city' => 'City',
-            'streetRoad' => 'Street Road',
+            'street' => 'Street',
             'lattitude' => 'Lattitude',
             'longitude' => 'Longitude',
             'vicinity' => 'Vicinity',
             'createdAt' => 'Created At',
         ];
     }
-
-    /**
-     * Gets query for [[Listing]].
-     *
-     * @return \yii\db\ActiveQuery
-     */
-    public function getListing()
+    public function getListings()
     {
-        return $this->hasOne(Listing::className(), ['listingId' => 'listingId']);
+        return $this->hasOne(Listings::className(), ['listingsId' => 'listingsId']);
     }
 }
