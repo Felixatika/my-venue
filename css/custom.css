@@ -32,12 +32,58 @@
 	height: 80px;
 	border-radius: 25px;
 }
-body {
+.site-index {
  background-image: url("images/bg.svg");
    -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
+.popular {
+	background-color: #CCCCCC ; 
+	height:400px;
+	width: 100%;
+	margin-bottom: 90px;
+}
 
+.card {
+	padding: 20px;
+	
+	
 
+}
+.popular-loc {
+   padding: 40px;
+  
+}
+.card-body {
+	padding-left: 10px;
+	margin: 5px;
+    width: 80px;
+    height: 100px;
+
+}
+.popular-ven {
+	background-color: #B1B7B7 ; 
+	height:700px;
+	width: 100%;
+	margin-bottom: 90px;
+}
+.popular-vendors {
+	background-color: #F7F7F7 ; 
+	height:500px;
+	width: 100%;
+	margin-bottom: 90px;
+}
+.listing-list {
+	padding-bottom: 20px;
+}
+.img-fluid{
+	 max-width: auto; 
+	 height: auto;
+}
+.card-vendor{
+	width: 25rem; 
+	height:45rem;
+
+}
