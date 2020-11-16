@@ -8,31 +8,48 @@ use yii\grid\GridView;
 /* @var $searchModel frontend\models\BookSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 ?>
+<
+<br>
 <!-- slider carousel -->
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(45).jpg"
-        alt="First slide">
+<div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="900000">
+  <div class="carousel-inner row w-100 mx-auto">
+    <div class="carousel-item col-md-6 col-sm-6 col-md-4 col-lg-2 active">
+      <img class="img-fluid mx-auto d-block" src="https://mdbootstrap.com/img/Photos/Slides/img%20(45).jpg" alt="First slide">
     </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(46).jpg"
-        alt="Second slide">
+    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-2">
+      <img class="img-fluid mx-auto d-block" src="https://mdbootstrap.com/img/Photos/Slides/img%20(46).jpg" alt="Second slide">
     </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(47).jpg"
-        alt="Third slide">
+    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-2">
+      <img class="img-fluid mx-auto d-block" src="https://mdbootstrap.com/img/Photos/Slides/img%20(47).jpg" alt="Third slide">
+    </div>
+    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-2">
+      <img class="img-fluid mx-auto d-block" src="https://mdbootstrap.com/img/Photos/Slides/img%20(46).jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-2">
+      <img class="img-fluid mx-auto d-block" src="https://mdbootstrap.com/img/Photos/Slides/img%20(46).jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-2">
+      <img class="img-fluid mx-auto d-block" src="https://mdbootstrap.com/img/Photos/Slides/img%20(46).jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-2">
+      <img class="img-fluid mx-auto d-block" src="https://mdbootstrap.com/img/Photos/Slides/img%20(46).jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-2">
+      <img class="img-fluid mx-auto d-block" src=".jpg" alt="Second slide">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+  <a class="carousel-control-next text-faded" href="#carouselExampleControls" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
 </div>
+
+<br>
+<br>
 <br>
 <br>
 <br>
@@ -92,25 +109,24 @@ use yii\grid\GridView;
    </div>
 </div>
   <div class="col-md-4">
-     <p clas>
-         <?= Html::a('<i class="fa fa-check-circle-o"></i> Verified Listing', ['create'], ['class' => 'btn btn-success btn-lg btn-block']) ?>
+     <p class="">
+         <button type="button" class="btn btn-success btn-lg btn-block"><i class="fa fa-check-circle-o"></i> Verified Listing</button>
      </p>
      <div class="card" >
        <div class="card-body">
          <h5 class="card-title"><i class="fa fa-calendar-check-o"></i> Booking</h5>
-
          <hr>
-         <div class="input-group">
+           <div class="input-group">
             <input type="text" class="form-control" placeholder="20/10/2020" aria-label="Username" aria-describedby="basic-addon1">
-        </div>
-        <div class="input-group">
-         <input type="text" class="form-control" placeholder="Time Slots" aria-label="Username" aria-describedby="basic-addon1">
-       </div>
-       <div class="input-group">
-         <input type="text" class="form-control" placeholder="Guests" aria-label="Username" aria-describedby="basic-addon1">
-         <span>1</span>
-       </div>
-       <button type="button" class="btn btn-danger">Request to Book</button>
+          </div>
+            <input type="text" class="form-control" placeholder="Time Slots" aria-label="Username" aria-describedby="basic-addon1">
+
+            <input type="text" class="form-control" placeholder="Guests" aria-label="Username" aria-describedby="basic-addon1">
+
+       <p class="">
+           <?= Html::a('Request to Book', ['create'], ['class' => 'btn btn-danger btn-lg btn-block']) ?>
+       </p>
+
      </div>
    </div>
  </div>
