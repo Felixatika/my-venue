@@ -15,23 +15,20 @@
 
 .explore{
 	padding-top:200px;
+	padding-left: 100px;
+}
+.explore button.active {
+	color: #F91942;
+
 }
 .explore h1{
    font-size: 90px;
    line-height: 105px;
    color: #000000;
 }
-.serchbar{
-	padding-top:180px;
-}
-.serchbar input{
-	height: 80px;
-	border-radius: 25px;
-}
-.serchbar button{
-	height: 80px;
-	border-radius: 25px;
-}
+
+
+
 /* body {
  background-image: url("images/bg.svg");
    -webkit-background-size: cover;
@@ -65,10 +62,13 @@
 	line-height: 36px;
 	margin: 1px 0;
 }
+.title-name{
+	color: #ffffff;
+}
 .card.card-category {
-	background-color:#c2b8b8;
-	width: 7rem; 
-	height: 7rem;
+	background-color: #EEEEEE;
+	width: 9rem; 
+	height: 9rem;
 	
 	margin-top: 1rem;
 
@@ -80,6 +80,7 @@
 	height:250px;
 	width: 100%;
 	margin-bottom: 100px;
+	padding-top: 2rem;
 
 }
 .popular {
@@ -87,17 +88,22 @@
 	height:400px;
 	width: 100%;
 	margin-bottom: 90px;
+	padding-top: 0.5rem;
 }
 
 .card {
 	padding: 20px;
-
-
-
+}
+.single-card {
+	margin-bottom: 50px;
 }
 .popular-loc {
    padding: 40px;
-
+  
+}
+.card-pop{
+	width: 9rem; 
+	height: 10rem;
 }
 .card.card-body {
 
@@ -179,12 +185,8 @@
 	color: #ffc600;
 }
 
-}
-.card-pop{
-	width: 10rem; 
-	height: 10rem;
 
-}
+
 @media (max-width: 768px) {
     .carousel-inner .carousel-item > div {
         display: none;
@@ -259,4 +261,44 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+.fa {
+	color: #F91942;
+	
+  }
+
+.search-sec{
+    padding: 2rem;
+}
+.search-slt{
+    display: block;
+    width: 100%;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #55595c;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    height: calc(3rem + 2px) !important;
+    border-radius:0;
+}
+.wrn-btn{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    height: calc(3rem + 2px) !important;
+    border-radius:0;
+}
+@media (min-width: 992px){
+    .search-sec{
+        position: relative;
+        top: -114px;
+        background: rgba(26, 70, 104, 0.51);
+    }
+}
+@media (max-width: 992px){
+    .search-sec{
+        background: #1A4668;
+    }
 }

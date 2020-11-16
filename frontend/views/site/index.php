@@ -9,55 +9,88 @@ $this->title = 'VENUES';
 <div class="site-index">
 
 
+
     <div class="row no-gutters serchbar">
-        <div class="col">
-            <input class="form-control border-secondary  border-right-0 rounded-0" type="search" value="Search Properties...." id="example-search-input4">
-        </div>
-        <div class="col-auto">
-            <button class="btn btn-outline-secondary border-left-0 rounded-0 rounded-right" type="button">
-                <i class="fa fa-search"></i>
-            </button>
-        </div>
+       
+        
     </div>
+     <div class="container">
+      
+            <div class="row">
+                <div class="col-lg-10 d-flex justify-content-center p-3 bg-dark rounded rounded-pill shadow-sm mb-4 ">
+                    <div class="row ">
+                        <div class="none col-lg-4 col-md-3 col-sm-12 p-0">
+                            <input type="text" class="form-control search-slt" placeholder="What are you looking for?">
+                        </div>
+                        <div class="none col-lg-3 col-md-2 col-sm-12 p-0" >
+                            <input type="text" class="form-control search-slt" placeholder="Location">
+                        </div>
+                        <div class="none col-lg-4 col-md-3 col-sm-12 p-0">
+                          <select class="form-control search-slt" id="exampleFormControlSelect1">
+                                    <option>All Categories</option>
+                                    <option>Hotels</option>
+                                    <option>Events</option>
+                                    <option>Restaurants</option>
+                                    <option>Shops</option>
+                                    <option>Fitness</option>
+                                    <option>Open Spaces</option>
+                                    </select>
+                        </div>
+                        <div class="col-lg-1 col-md-2 col-sm-12 p-0">
+                            <button type="button" class="btn btn-danger wrn-btn"><i class="fa fa-search"></i></button></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+            </div>
+          </div>
+
+          
+
+
+   
 
     <div class="explore">
-        <h1>Venues</h1>
-        <h1>Near Me</h1>
-       <p><button type="button" class="btn btn-outline-secondary">Explore Nearby venues</button></p>
+        <h1 >Venues</h1>
+        <h1 >Near Me</h1>
+       <p><button type="button" class="btn btn-secondary">Explore Nearby venues</button></p>
     </div>
 
     
-</div><br>
-<br>
-<br>
+</div>
+
 
 <div class="container-fluid">
 <div class="row">
 
 <div class="popular-category">
-    <h1 class="text-center"> POPULAR CATEGORIES</h1>
+    <h2 class="text-center"> Popular Categories</h1>
     <div class="col-md-12 ">
     <div class="row listing-list">
-      <div class="col-md-3 partition">my other space</div>
+      <div class="col-md-3 partition"></div>
     <div class="col-md-6 partition">
       <div class="row ">
     
     <div class="col-md-3 ">
    
-    <div class="card card-category">
-  				<i class="fas fa-hamburger"></i>
-					<h6 class="font-weight-light">Eat &amp; Drink</h6>
+    <div class="view overlay card card-category border border-light ">
+            <i class="fa fa-cutlery fa-4x d-flex justify-content-center " style="color: #F91942" aria-hidden="true"></i>
+            <div class="mask rgba-pink-strong">
+		<p class="font-weight-light text-center">Eat &amp; Drink</p></div>
 	    </div>
     
 
     
     </div>
     
+    
     <div class="col-md-3 ">
     <div class="single-card  ">
-    <div class="card card-category">
-    <i class="fas fa-concierge-bell"></i>
-					<h6 class="font-weight-light">Hotels</h6>
+    <div class="card card-category border border-light">
+          <i class="fa fa-h-square fa-4x d-flex justify-content-center" style="color: #F91942" aria-hidden="true"></i>
+	    <p class="font-weight-light text-center">Hotels</p>
 	    </div>
     </div>
 
@@ -66,9 +99,9 @@ $this->title = 'VENUES';
    
     <div class="col-md-3 ">
     <div class="single-card  ">
-    <div class="card card-category">
-    <i class="fas fa-guitar"></i>
-					<h6 class="font-weight-light">Events</h6>
+    <div class="card card-category border border-light ">
+     <i class="fa fa-music fa-4x d-flex justify-content-center" style="color: #F91942" aria-hidden="true"></i>
+		<p class="font-weight-light text-center">Events</p>
 	    </div>
     </div>
 
@@ -76,16 +109,16 @@ $this->title = 'VENUES';
     </div>
     <div class="col-md-3 ">
     <div class="single-card  ">
-    <div class="card card-category">
-    <i class="fas fa-glass-cheers"></i>
-					<h6 class="font-weight-light">Nightlife</h6>
+    <div class="card card-category border border-light ">
+    <i class="fa fa-glass fa-4x d-flex justify-content-center" style="color: #F91942" aria-hidden="true"></i>
+		<p class="font-weight-light text-center">Nightlife</p>
 	    </div>
     </div>
     
     </div>
 </div>
             </div>
-            <div class="col-md-3 partition">my space</div>
+            <div class="col-md-3 partition"></div>
            
                 </div>
             
@@ -107,21 +140,21 @@ $this->title = 'VENUES';
 <div class="row">
     
 <div class="popular">
-    <h1 class="text-center"> POPULAR LOCATIONS</h1>
+    <h2 class="text-center"> Popular Locations</h2>
     <div class="col-md-12 popular-loc">
     <div class="row listing-list">
 
     <div class="col-md-3 ">
     <div class="single-card float-left col-md-6">
-    <div class="card-pop">
+    <div class="card-pop ">
      
-      <img src="images/bg.jpg" class="img-fluid" alt="house">
+      <img src="images/maldives.jpg" class="img-fluid rounded" alt="house">
       
     </div>
     </div>
 
     <div class="card-desc float-right col-md-6">
-    <h5 class="card-title">MOMBASAs</h5>
+    <h5 class="font-weight-light">MOMBASA</h5>
         <h6 class="card-subtitle mb-2 text-muted">7 Hr Drive</h6>
        
         </div>
@@ -129,12 +162,12 @@ $this->title = 'VENUES';
     <div class="col-md-3">
     <div class="single-card float-left col-md-6">
         <div class="card-pop">
-            <img src="images/bg.jpg" class="img-fluid" alt="house">
+            <img src="images/junction.jpg" class="img-fluid rounded" alt="house">
       
         </div>
         </div>
         <div class="card-desc float-right col-md-6">
-        <h5 class="card-title">MOMBASA</h5>
+        <h5 class="font-weight-light">NAIROBI</h5>
         <h6 class="card-subtitle mb-2 text-muted">7 Hr Drive</h6>
         </div>
     </div>
@@ -142,23 +175,23 @@ $this->title = 'VENUES';
         <div class="col-md-3">
         <div class="single-card float-left col-md-6">
         <div class="card-pop">        
-        <img src="images/bg.jpg" class="img-fluid" alt="house">
+        <img src="images/sunrise.jpg" class="img-fluid rounded" alt="house">
              </div>
     </div>
     <div class="card-desc float-right col-md-6">
-    <h5 class="card-title">MOMBASA</h5>
+    <h5 class="font-weight-light">KAKAMEGA</h5>
         <h6 class="card-subtitle mb-2 text-muted">7 Hr Drive</h6>
     </div>
         </div>
     <div class="col-md-3">
     <div class="single-card float-left col-md-6">
        <div class="card-pop" >
-            <img src="images/bg.jpg" class="img-fluid" alt="house">
+            <img src="images/sea.jpg" class="img-fluid rounded" alt="house">
            
         </div>
             </div>
             <div class="card-desc float-right col-md-6">
-            <h5 class="card-title">MOMBASA</h5>
+            <h5 class="font-weight-light">KISII</h5>
         <h6 class="card-subtitle mb-2 text-muted">7 Hr Drive</h6>
                
             </div>
@@ -168,12 +201,12 @@ $this->title = 'VENUES';
             <div class="col-md-3">
             <div class="single-card float-left col-md-6">
             <div class="card-pop">
-              <img src="images/bg.jpg" class="img-fluid" alt="house">
+              <img src="images/camel.jpg" class="img-fluid rounded" alt="house">
             
             </div>
         </div>
             <div class="card-desc float-right col-md-6">
-            <h5 class="card-title">MOMBASA</h5>
+            <h5 class="font-weight-light">MANDERA</h5>
         <h6 class="card-subtitle mb-2 text-muted">7 Hr Drive</h6>
             </div>
                 </div>
@@ -181,12 +214,12 @@ $this->title = 'VENUES';
         <div class="col-md-3">
         <div class="single-card float-left col-md-6">
             <div class="card-pop" >
-              <img src="images/bg.jpg" class="img-fluid" alt="house">
+              <img src="images/market.jpg" class="img-fluid rounded" alt="house">
            
             </div>
         </div>
         <div class="card-desc float-right col-md-6">
-        <h5 class="card-title">MOMBASA</h5>
+        <h5 class="font-weight-light">KISUMU</h5>
         <h6 class="card-subtitle mb-2 text-muted">7 Hr Drive</h6>
         </div>
             </div>
@@ -194,24 +227,24 @@ $this->title = 'VENUES';
             <div class="col-md-3">
             <div class="single-card float-left col-md-6">
             <div class="card-pop" >
-              <img src="images/bg.jpg" class="img-fluid" alt="house">
+              <img src="images/pink-flamingo.jpg" class="img-fluid rounded" alt="house">
             
                     </div>
                 </div>
         <div class="card-desc float-right col-md-6">
-        <h5 class="card-title">MOMBASA</h5>
+        <h5 class="font-weight-light">NAKURU</h5>
         <h6 class="card-subtitle mb-2 text-muted">7 Hr Drive</h6>
         </div>
             </div>
         <div class="col md-3">
         <div class="single-card float-left col-md-6">
             <div class="card-pop" >
-            <img src="images/bg.jpg" class="img-fluid" alt="house">
+            <img src="images/flower.jpg" class="img-fluid rounded" alt="house">
            
             </div>
             </div>
             <div class="card-desc pull-right col-md-6"> 
-            <h5 class="card-title">MOMBASAr</h5>
+            <h5 class="font-weight-light">TAVETA</h5>
         <h6 class="card-subtitle mb-2 text-muted">7 Hr Drive</h6>
                 </div>
                 </div>
@@ -229,49 +262,49 @@ $this->title = 'VENUES';
 </div>
 
 <div class="container-fluid text-center my-3">
-    <h2 class="font-weight-light">Most Visited Venues</h2>
+    <h2>Most Visited Venues</h2>
     <div class="row mx-auto my-auto">
         <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
             <div class="carousel-inner " role="listbox">
                 <div class="carousel-item active">
                     <div class="col-md-4">
                         <div class="card card-body">
-                            <img class="img-fluid" src="images/bg.jpg">
+                            <img class="img-fluid" src="images/new-zealand.jpg">
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="col-md-4">
                         <div class="card card-body">
-                            <img class="img-fluid" src="images/bg.jpg">
+                            <img class="img-fluid" src="images/location.jpg">
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="col-md-4">
                         <div class="card card-body">
-                            <img class="img-fluid" src="images/bg.jpg">
+                            <img class="img-fluid" src="images/landscape.jpg">
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="col-md-4">
                         <div class="card card-body">
-                            <img class="img-fluid" src="images/bg.jpg">
+                            <img class="img-fluid" src="images/chairs.jpg">
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="col-md-4">
                         <div class="card card-body">
-                            <img class="img-fluid" src="images/bg.jpg">
+                            <img class="img-fluid" src="images/agriculture.jpg">
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="col-md-4">
                         <div class="card card-body">
-                            <img class="img-fluid" src="images/bg.jpg">
+                            <img class="img-fluid" src="images/rockymountains.jpg">
                         </div>
                     </div>
                 </div>
@@ -292,13 +325,13 @@ $this->title = 'VENUES';
     <div class="container-fluid">
     <div class="row">
     <div class="popular-vendors">
-    <h1> Meet Our Vendors</h1>
+    <h2 class="text-center"> Meet Our Vendors</h2>
             <div class="col-md-12 popular-loc">
             <div class="row listing-list">
             
             <div class="col-md-3">
             <div class="card-vendor"  >
-            <img src="images/bg.jpg" class="card-img-top" alt="house">
+            <img src="images/photographs.jpg" class="img-fluid rounded" alt="house">
           <h5 class="card-title">Photography</h5>
             </div>
             
@@ -307,7 +340,7 @@ $this->title = 'VENUES';
 
             <div class="col-md-3">
             <div class="card-vendor" >
-            <img src="images/bg.jpg" class="img-fluid" alt="house">
+            <img src="images/food.jpg" class="img-fluid rounded" alt="caterers">
            <h5 class="card-title">Caterers</h5>
             </div>
              
@@ -316,14 +349,14 @@ $this->title = 'VENUES';
             
             <div class="col-md-3">
             <div class="card-vendor" >
-            <img src="images/bg.jpg" class="img-fluid" alt="house">
+            <img src="images/table.jpg" class="img-fluid rounded" alt="house">
             <h5 class="card-title">DJs and Music</h5>
             </div>
              
             </div>
             <div class="col-md-3">
             <div class="card-vendor"  >
-            <img src="images/bg.jpg" class="img-fluid" alt="house">
+            <img src="images/makeup.jpg" class="img-fluid rounded" alt="house">
             <h5 class="card-title">Make-up Artists</h5>
             </div>
               
