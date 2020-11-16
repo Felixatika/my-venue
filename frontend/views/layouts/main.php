@@ -40,7 +40,8 @@ AppAsset::register($this);
         'items' => [
             ['label' => 'Search By Location', 'url' => ['/site/index'],'options'=>['class'=>'nav-location']],
             ['label' => 'Search By Company', 'url' => ['/site/about'],'options'=>['class'=>'navglobe-pright']],
-            ['label' => 'Service Providers', 'url' => ['/site/index'],'options'=>['class'=>'nav-location']],
+            ['label' => 'About', 'url' => ['/site/about'],'options'=>['class'=>'nav-location']],
+            ['label' => 'Contact', 'url' => ['/site/contact'],'options'=>['class'=>'nav-location']],
 
             [
                 'label' => '<i class="fa fa-globe fa-fw fa-lg"></i>',

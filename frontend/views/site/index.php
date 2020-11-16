@@ -8,6 +8,7 @@ $this->title = 'VENUES';
 ?>
 <div class="site-index">
 
+
     <div class="row no-gutters serchbar">
         <div class="col">
             <input class="form-control border-secondary  border-right-0 rounded-0" type="search" value="Search Properties...." id="example-search-input4">
