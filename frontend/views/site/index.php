@@ -38,7 +38,7 @@ $this->title = 'VENUES';
     <h1 class="text-center"> POPULAR CATEGORIES</h1>
     <div class="col-md-12 ">
     <div class="row listing-list">
-      <div class="col-md-3 partition">my other space</div>
+      <div class="col-md-3 partition"></div>
     <div class="col-md-6 partition">
       <div class="row ">
     
@@ -85,7 +85,7 @@ $this->title = 'VENUES';
     </div>
 </div>
             </div>
-            <div class="col-md-3 partition">my space</div>
+            <div class="col-md-3 partition"></div>
            
                 </div>
             
@@ -121,7 +121,7 @@ $this->title = 'VENUES';
     </div>
 
     <div class="card-desc float-right col-md-6">
-    <h5 class="card-title">MOMBASAs</h5>
+    <h5  class="font-weight-light">MOMBASA</h5>
         <h6 class="card-subtitle mb-2 text-muted">7 Hr Drive</h6>
        
         </div>
@@ -134,7 +134,7 @@ $this->title = 'VENUES';
         </div>
         </div>
         <div class="card-desc float-right col-md-6">
-        <h5 class="card-title">MOMBASA</h5>
+        <h5  class="font-weight-light">NAIVASHA</h5>
         <h6 class="card-subtitle mb-2 text-muted">7 Hr Drive</h6>
         </div>
     </div>
@@ -146,7 +146,7 @@ $this->title = 'VENUES';
              </div>
     </div>
     <div class="card-desc float-right col-md-6">
-    <h5 class="card-title">MOMBASA</h5>
+    <h5 class="font-weight-light">NAIROBI</h5>
         <h6 class="card-subtitle mb-2 text-muted">7 Hr Drive</h6>
     </div>
         </div>
@@ -158,7 +158,7 @@ $this->title = 'VENUES';
         </div>
             </div>
             <div class="card-desc float-right col-md-6">
-            <h5 class="card-title">MOMBASA</h5>
+            <h5 class="font-weight-light">KISUMU</h5>
         <h6 class="card-subtitle mb-2 text-muted">7 Hr Drive</h6>
                
             </div>
@@ -173,7 +173,7 @@ $this->title = 'VENUES';
             </div>
         </div>
             <div class="card-desc float-right col-md-6">
-            <h5 class="card-title">MOMBASA</h5>
+            <h5  class="font-weight-light">KISII</h5>
         <h6 class="card-subtitle mb-2 text-muted">7 Hr Drive</h6>
             </div>
                 </div>
@@ -186,7 +186,7 @@ $this->title = 'VENUES';
             </div>
         </div>
         <div class="card-desc float-right col-md-6">
-        <h5 class="card-title">MOMBASA</h5>
+        <h5  class="font-weight-light">KAKAMEGA</h5>
         <h6 class="card-subtitle mb-2 text-muted">7 Hr Drive</h6>
         </div>
             </div>
@@ -199,7 +199,7 @@ $this->title = 'VENUES';
                     </div>
                 </div>
         <div class="card-desc float-right col-md-6">
-        <h5 class="card-title">MOMBASA</h5>
+        <h5 class="font-weight-light">MANDERA</h5>
         <h6 class="card-subtitle mb-2 text-muted">7 Hr Drive</h6>
         </div>
             </div>
@@ -211,7 +211,7 @@ $this->title = 'VENUES';
             </div>
             </div>
             <div class="card-desc pull-right col-md-6"> 
-            <h5 class="card-title">MOMBASAr</h5>
+            <h5 class="font-weight-light">TAVETA</h5>
         <h6 class="card-subtitle mb-2 text-muted">7 Hr Drive</h6>
                 </div>
                 </div>
@@ -229,7 +229,7 @@ $this->title = 'VENUES';
 </div>
 
 <div class="container-fluid text-center my-3">
-    <h2 class="font-weight-light">Most Visited Venues</h2>
+    <h2 class="text-center">Most Visited Venues</h2>
     <div class="row mx-auto my-auto">
         <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
             <div class="carousel-inner " role="listbox">

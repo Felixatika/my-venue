@@ -92,7 +92,9 @@
 .card {
 	padding: 20px;
 
-
+}
+.single-card{
+	padding-bottom: 4rem;
 
 }
 .popular-loc {
