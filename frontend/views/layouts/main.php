@@ -44,6 +44,10 @@ var currentScrollPos = window.pageYOffset;
 <div id="navbar">
 <?php 
     NavBar::begin([   
+
+<div class="wrap">
+    <?php
+    NavBar::begin([
         'brandLabel' => Yii::$app->name,
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
@@ -103,7 +107,7 @@ var currentScrollPos = window.pageYOffset;
         'encodeLabels' => false,
     ]);
     NavBar::end();
-     
+
     ?>
     <div class="container-fluid">
         <?= Breadcrumbs::widget([
@@ -115,7 +119,6 @@ var currentScrollPos = window.pageYOffset;
 </div>
 
         	   <!-- Footer
-================================================== -->
 <div id="footer" class="sticky-footer">
 	<!-- Main -->
 	<div class="container-fluid">
