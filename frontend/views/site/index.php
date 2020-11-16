@@ -30,6 +30,79 @@ $this->title = 'VENUES';
 </div><br>
 <br>
 <br>
+
+<div class="container-fluid">
+<div class="row">
+
+<div class="popular-category">
+    <h1 class="text-center"> POPULAR CATEGORIES</h1>
+    <div class="col-md-12 ">
+    <div class="row listing-list">
+      <div class="col-md-3 partition">my other space</div>
+    <div class="col-md-6 partition">
+      <div class="row ">
+    
+    <div class="col-md-3 ">
+   
+    <div class="card card-category">
+  				<i class="fas fa-hamburger"></i>
+					<h6 class="font-weight-light">Eat &amp; Drink</h6>
+	    </div>
+    
+
+    
+    </div>
+    
+    <div class="col-md-3 ">
+    <div class="single-card  ">
+    <div class="card card-category">
+    <i class="fas fa-concierge-bell"></i>
+					<h6 class="font-weight-light">Hotels</h6>
+	    </div>
+    </div>
+
+    
+    </div>
+   
+    <div class="col-md-3 ">
+    <div class="single-card  ">
+    <div class="card card-category">
+    <i class="fas fa-guitar"></i>
+					<h6 class="font-weight-light">Events</h6>
+	    </div>
+    </div>
+
+    
+    </div>
+    <div class="col-md-3 ">
+    <div class="single-card  ">
+    <div class="card card-category">
+    <i class="fas fa-glass-cheers"></i>
+					<h6 class="font-weight-light">Nightlife</h6>
+	    </div>
+    </div>
+    
+    </div>
+</div>
+            </div>
+            <div class="col-md-3 partition">my space</div>
+           
+                </div>
+            
+   
+</div>
+    
+    </div>
+ 
+    </div>
+
+</div>
+
+
+
+
+</div>
+</div>
 <div class="container-fluid">
 <div class="row">
     
@@ -40,7 +113,7 @@ $this->title = 'VENUES';
 
     <div class="col-md-3 ">
     <div class="single-card float-left col-md-6">
-    <div class="card">
+    <div class="card-pop">
      
       <img src="images/bg.jpg" class="img-fluid" alt="house">
       
@@ -55,8 +128,8 @@ $this->title = 'VENUES';
     </div>
     <div class="col-md-3">
     <div class="single-card float-left col-md-6">
-        <div class="card">
-            <img src="images/ice-cream.jpg" class="img-fluid" alt="house">
+        <div class="card-pop">
+            <img src="images/bg.jpg" class="img-fluid" alt="house">
       
         </div>
         </div>
@@ -68,7 +141,7 @@ $this->title = 'VENUES';
    
         <div class="col-md-3">
         <div class="single-card float-left col-md-6">
-        <div class="card">        
+        <div class="card-pop">        
         <img src="images/bg.jpg" class="img-fluid" alt="house">
              </div>
     </div>
@@ -79,7 +152,7 @@ $this->title = 'VENUES';
         </div>
     <div class="col-md-3">
     <div class="single-card float-left col-md-6">
-       <div class="card" >
+       <div class="card-pop" >
             <img src="images/bg.jpg" class="img-fluid" alt="house">
            
         </div>
@@ -94,7 +167,7 @@ $this->title = 'VENUES';
             <div class="row listing-list">
             <div class="col-md-3">
             <div class="single-card float-left col-md-6">
-            <div class="card">
+            <div class="card-pop">
               <img src="images/bg.jpg" class="img-fluid" alt="house">
             
             </div>
@@ -107,7 +180,7 @@ $this->title = 'VENUES';
 
         <div class="col-md-3">
         <div class="single-card float-left col-md-6">
-            <div class="card" >
+            <div class="card-pop" >
               <img src="images/bg.jpg" class="img-fluid" alt="house">
            
             </div>
@@ -120,7 +193,7 @@ $this->title = 'VENUES';
         
             <div class="col-md-3">
             <div class="single-card float-left col-md-6">
-            <div class="card" >
+            <div class="card-pop" >
               <img src="images/bg.jpg" class="img-fluid" alt="house">
             
                     </div>
@@ -132,7 +205,7 @@ $this->title = 'VENUES';
             </div>
         <div class="col md-3">
         <div class="single-card float-left col-md-6">
-            <div class="card" >
+            <div class="card-pop" >
             <img src="images/bg.jpg" class="img-fluid" alt="house">
            
             </div>
@@ -148,45 +221,72 @@ $this->title = 'VENUES';
 
     
     </div>
-    <div class="col-md-8">
-    	<div id="homemap" style="width: 100%; height: 850px; border-radius: 5px"></div>
-    </div>
+ 
     </div>
 
 </div>
 </div>
-yess</div>
- 
-<div class="container-fluid">
-<div class="row">
-<div class="popular-ven">
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="images/bg.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-    <img src="images/ice-cream.jpg" class="card-img-top" alt="house">
-    </div>
-    <div class="carousel-item">
-    <img src="images/bg.jpg" class="card-img-top" alt="house">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
 </div>
-</div></div>
+
+<div class="container-fluid text-center my-3">
+    <h2 class="font-weight-light">Most Visited Venues</h2>
+    <div class="row mx-auto my-auto">
+        <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+            <div class="carousel-inner " role="listbox">
+                <div class="carousel-item active">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="images/bg.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="images/bg.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="images/bg.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="images/bg.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="images/bg.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="images/bg.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+   
 </div>
 
     <div class="container-fluid">
@@ -235,7 +335,7 @@ yess</div>
             
             </div>
             <div class="col-md-8">
-                <div id="homemap" style="width: 100%; height: 850px; border-radius: 5px"></div>
+                <div id="homemap" style="width: 100%; height: 50px; border-radius: 5px"></div>
             </div>
             </div>
 

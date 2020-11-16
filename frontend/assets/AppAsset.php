@@ -16,6 +16,7 @@ class AppAsset extends AssetBundle
         'css/custom.css',
     ];
     public $js = [
+        'css/carousel.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',
