@@ -39,7 +39,7 @@ AppAsset::register($this);
     echo Nav::widget([
         'items' => [
             ['label' => 'Search By Location', 'url' => ['/listings/searchresult'],'options'=>['class'=>'nav-location']],
-            ['label' => 'Search By Company', 'url' => ['/listings/isearchresult'],'options'=>['class'=>'navglobe-pright']],
+            ['label' => 'Search By Company', 'url' => ['/listings/searchresult'],'options'=>['class'=>'navglobe-pright']],
             ['label' => 'Service Providers', 'url' => ['/site/index'],'options'=>['class'=>'nav-location']],
 
             [
