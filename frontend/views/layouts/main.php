@@ -1,8 +1,6 @@
 <?php
-
 /* @var $this \yii\web\View */
 /* @var $content string */
-
 use yii\helpers\Html;
 use yii\widgets\Breadcrumbs;
 use frontend\assets\AppAsset;
@@ -28,7 +26,7 @@ AppAsset::register($this);
 <?php $this->beginBody() ?>
 
 <div class="wrap">
-    <?php 
+    <?php
     NavBar::begin([
         'brandLabel' => Yii::$app->name,
         'brandUrl' => Yii::$app->homeUrl,
@@ -38,10 +36,9 @@ AppAsset::register($this);
     ]);
     echo Nav::widget([
         'items' => [
-            ['label' => 'Search By Location', 'url' => ['/site/index'],'options'=>['class'=>'nav-location']],
-            ['label' => 'Search By Company', 'url' => ['/site/about'],'options'=>['class'=>'navglobe-pright']],
-            ['label' => 'About', 'url' => ['/site/about'],'options'=>['class'=>'nav-location']],
-            ['label' => 'Contact', 'url' => ['/site/contact'],'options'=>['class'=>'nav-location']],
+            ['label' => 'Search By Location', 'url' => ['/listings/searchresult'],'options'=>['class'=>'nav-location']],
+            ['label' => 'Search By Company', 'url' => ['/listings/searchresult'],'options'=>['class'=>'navglobe-pright']],
+            ['label' => 'Service Providers', 'url' => ['/site/index'],'options'=>['class'=>'nav-location']],
 
             [
                 'label' => '<i class="fa fa-globe fa-fw fa-lg"></i>',
@@ -52,12 +49,10 @@ AppAsset::register($this);
             ],
             '&nbsp;&nbsp;',
             [
-                'label' => '<i class="fa fa-bars" aria-hidden="true"></i>&nbsp;&nbsp;  <i class="fa fa-user-circle-o" aria-hidden="true"></i>',
+                'label' => '<i class="fa fa-bars" aria-hidden="true"></i>&nbsp;&nbsp;<i class="fa fa-user-circle-o" aria-hidden="true"></i>',
                 'items' => [
-                    ['label' => 'Level 1 - Dropdown A', 'url' => '#'],
-                    '<div class="dropdown-divider"></div>',
-                    '<div class="dropdown-header">Dropdown Header</div>',
-                    ['label' => 'Level 1 - Dropdown B', 'url' => '#'],
+                    ['label' => 'Sign-Up', 'url' => '#'],
+                    ['label' => 'Login', 'url' => '#'],
                 ],
                 'options'=>['class'=>'nav-button btn btn-outline-dark']
             ],
@@ -66,7 +61,6 @@ AppAsset::register($this);
         'encodeLabels' => false,
     ]);
     NavBar::end();
-     
     ?>
 
     <div class="container-fluid">
@@ -76,6 +70,50 @@ AppAsset::register($this);
         <?= Alert::widget() ?>
         <?= $content ?>
     </div>
+</div>
+<div id="footer" class="sticky-footer">
+   <!-- Main -->
+   <div class="container-fluid">
+      <div class="alg">
+         <div class="row">
+            <div class="col-md-3">
+               <h4>ABOUT</h4>
+               <ul class="footer-links">
+                  <li><a href="<?= Url::to(['site/work'])?>" class="sign-in popup-with-zoom-anim"></i> About Us</a></li>
+               </ul>
+            </div>
+            <div class="col-md-3">
+               <h4>COMMUNITY</h4>
+               <ul class="footer-links">
+                  <li><a href="#sign-in-dialog" class="sign-in popup-with-zoom-anim"></i> Sign Up</a></li>
+                  <li><a href="#sign-in-dialog" class="sign-in popup-with-zoom-anim"></i> Sign In</a></li>
+               </ul>
+            </div>
+            <div class="col-md-3">
+               <h4>HOST</h4>
+               <div class="text-widget">
+                  <ul class="footer-links">
+                     <li><a href="#sign-in-dialog" class="sign-in popup-with-zoom-anim"></i><span> Host Your Venue<span></a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-md-3">
+               <h4>SUPPORT</h4>
+                  <ul class="footer-links">
+                     <li><a href="<?= Url::to(['site/contact'])?>"class="sign-in popup-with-zoom-anim"></i><span> Contact<span></a></li>
+                  </ul>
+            </div>
+         </div>
+      </div>
+      <!-- Copyright -->
+      <div class="row">
+         <div class="col-md-12">
+                <div class="copyrights">© 2020 myVenue,Inc. All Rights Reserved. Privacy. Terms . SiteMap
+                    <i class="fab fa-instagram pull-right"></i>, <i class="fab fa-twitter pull-right">,</i>,<i class="fab fa-facebook-f pull-right"></i>,<i class="fa fa-globe fa-fw fa-lg pull-right"></i>'
+                </div>
+         </div>
+      </div>
+   </div>
 </div>
 
 <footer class="footer">
