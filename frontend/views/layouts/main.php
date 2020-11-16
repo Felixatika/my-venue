@@ -1,8 +1,6 @@
 <?php
-
 /* @var $this \yii\web\View */
 /* @var $content string */
-
 use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\bootstrap4\Nav;
@@ -10,7 +8,6 @@ use yii\bootstrap4\NavBar;
 use yii\widgets\Breadcrumbs;
 use frontend\assets\AppAsset;
 use common\widgets\Alert;
-
 AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
@@ -27,7 +24,6 @@ AppAsset::register($this);
 </head>
 <body>
 <?php $this->beginBody() ?>
-
 <script>
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
@@ -40,18 +36,13 @@ var currentScrollPos = window.pageYOffset;
   prevScrollpos = currentScrollPos;
 }
 </script>
-
 <div id="navbar">
-<?php 
-    NavBar::begin([   
-
-<div class="wrap">
-    <?php
+<?php
     NavBar::begin([
         'brandLabel' => Yii::$app->name,
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar navbar-expand-lg navbar-light bg-light fixed-top',            
+            'class' => 'navbar navbar-expand-lg navbar-light bg-light fixed-top',
         ],
     ]);
     $menuItems = [
@@ -72,10 +63,9 @@ var currentScrollPos = window.pageYOffset;
             )
             . Html::endForm()
         ];
-       
     }
     echo Nav::widget([
-        'items' => [           
+        'items' => [
             ['label' => 'Home', 'url' => ['/site/index'],'options'=>['class'=>'nav-location']],
             ['label' => 'Venues', 'url' => ['/listings/list-sidebar'],'options'=>['class'=>'navglobe-pright']],
             ['label' => 'Service Providers', 'url' => ['/site/serviceproviders'],'options'=>['class'=>'navglobe-pright']],
@@ -100,14 +90,12 @@ var currentScrollPos = window.pageYOffset;
                 'encodeLabels'=> false,
                 'items' => $menuItems,
                 'options'=>['class'=>'nav-button btn btn-outline-dark'],['class'=>'nav-side'],
-               
             ],
         ],
         'options' => ['class' => 'navbar-nav'],
         'encodeLabels' => false,
     ]);
     NavBar::end();
-
     ?>
     <div class="container-fluid">
         <?= Breadcrumbs::widget([
@@ -117,61 +105,52 @@ var currentScrollPos = window.pageYOffset;
         <?= $content ?>
     </div>
 </div>
-
-        	   <!-- Footer
+              <!-- Footer
+================================================== -->
 <div id="footer" class="sticky-footer">
-	<!-- Main -->
-	<div class="container-fluid">
-		<div class="alg">
-			<div class="row">
-				<div class="col-md-3"> 
-					<h4>ABOUT</h4>
-					<ul class="footer-links">
-						<li><a href="<?= Url::to(['site/work'])?>" class="sign-in popup-with-zoom-anim"></i> About Us</a></li>
-					</ul>
-				</div>
-            
-
-				<div class="col-md-3">
-					<h4>COMMUNITY</h4>
-					<ul class="footer-links">
-						<li><a href="#sign-in-dialog" class="sign-in popup-with-zoom-anim"></i> Sign Up</a></li>
-						<li><a href="#sign-in-dialog" class="sign-in popup-with-zoom-anim"></i> Sign In</a></li>		
-					</ul>
-				</div>
-
-				<div class="col-md-3">
-					<h4>HOST</h4>
-					<div class="text-widget">
-						<ul class="footer-links">
-							<li><a href="#sign-in-dialog" class="sign-in popup-with-zoom-anim"></i><span> Host Your Venue<span></a></li>
-						</ul>
-					</div>
-				</div>
-            
-				<div class="col-md-3">
-					<h4>SUPPORT</h4>
-						<ul class="footer-links">
-							<li><a href="<?= Url::to(['site/contact'])?>"class="sign-in popup-with-zoom-anim"></i><span> Contact<span></a></li>
-						</ul>
-				</div>
-			</div>
-
-		</div>
-
-		<!-- Copyright -->
-		<div class="row">
-			<div class="col-md-12">
-                <div class="copyrights">© 2020 myVenue,Inc. All Rights Reserved. Privacy. Terms . SiteMap 
+   <!-- Main -->
+   <div class="container-fluid">
+      <div class="alg">
+         <div class="row">
+            <div class="col-md-3">
+               <h4>ABOUT</h4>
+               <ul class="footer-links">
+                  <li><a href="<?= Url::to(['site/work'])?>" class="sign-in popup-with-zoom-anim"></i> About Us</a></li>
+               </ul>
+            </div>
+            <div class="col-md-3">
+               <h4>COMMUNITY</h4>
+               <ul class="footer-links">
+                  <li><a href="#sign-in-dialog" class="sign-in popup-with-zoom-anim"></i> Sign Up</a></li>
+                  <li><a href="#sign-in-dialog" class="sign-in popup-with-zoom-anim"></i> Sign In</a></li>
+               </ul>
+            </div>
+            <div class="col-md-3">
+               <h4>HOST</h4>
+               <div class="text-widget">
+                  <ul class="footer-links">
+                     <li><a href="#sign-in-dialog" class="sign-in popup-with-zoom-anim"></i><span> Host Your Venue<span></a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-md-3">
+               <h4>SUPPORT</h4>
+                  <ul class="footer-links">
+                     <li><a href="<?= Url::to(['site/contact'])?>"class="sign-in popup-with-zoom-anim"></i><span> Contact<span></a></li>
+                  </ul>
+            </div>
+         </div>
+      </div>
+      <!-- Copyright -->
+      <div class="row">
+         <div class="col-md-12">
+                <div class="copyrights">© 2020 myVenue,Inc. All Rights Reserved. Privacy. Terms . SiteMap
                     <i class="fab fa-instagram pull-right"></i>, <i class="fab fa-twitter pull-right">,</i>,<i class="fab fa-facebook-f pull-right"></i>,<i class="fa fa-globe fa-fw fa-lg pull-right"></i>'
                 </div>
-			</div>
-		</div>
-
-	</div>
-
+         </div>
+      </div>
+   </div>
 </div>
-
 <?php $this->endBody() ?>
 </body>
 </html>

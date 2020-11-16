@@ -100,17 +100,17 @@ use yii\grid\GridView;
          <h5 class="card-title"><i class="fa fa-calendar-check-o"></i> Booking</h5>
 
          <hr>
-         <div class="input-group mb-3">
+         <div class="input-group">
             <input type="text" class="form-control" placeholder="20/10/2020" aria-label="Username" aria-describedby="basic-addon1">
         </div>
-        <div class="input-group mb-3">
+        <div class="input-group">
          <input type="text" class="form-control" placeholder="Time Slots" aria-label="Username" aria-describedby="basic-addon1">
        </div>
-       <div class="input-group mb-3">
+       <div class="input-group">
          <input type="text" class="form-control" placeholder="Guests" aria-label="Username" aria-describedby="basic-addon1">
          <span>1</span>
        </div>
-       <button type="button" class="btn btn-danger btn-lg btn-block">Request to Book</button>
+       <button type="button" class="btn btn-danger">Request to Book</button>
      </div>
    </div>
  </div>
