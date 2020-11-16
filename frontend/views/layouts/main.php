@@ -28,7 +28,7 @@ AppAsset::register($this);
 <?php $this->beginBody() ?>
 
 <div class="wrap">
-    <?php 
+    <?php
     NavBar::begin([
         'brandLabel' => Yii::$app->name,
         'brandUrl' => Yii::$app->homeUrl,
@@ -39,7 +39,7 @@ AppAsset::register($this);
     echo Nav::widget([
         'items' => [
             ['label' => 'Search By Location', 'url' => ['/listings/searchresult'],'options'=>['class'=>'nav-location']],
-            ['label' => 'Search By Company', 'url' => ['/listings/index'],'options'=>['class'=>'navglobe-pright']],
+            ['label' => 'Search By Company', 'url' => ['/listings/isearchresult'],'options'=>['class'=>'navglobe-pright']],
             ['label' => 'Service Providers', 'url' => ['/site/index'],'options'=>['class'=>'nav-location']],
 
             [
@@ -63,10 +63,10 @@ AppAsset::register($this);
         'encodeLabels' => false,
     ]);
     NavBar::end();
-     
+
     ?>
 
-    <div class="container">
+    <div class="container-fluid">
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
