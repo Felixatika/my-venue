@@ -38,8 +38,8 @@ AppAsset::register($this);
     ]);
     echo Nav::widget([
         'items' => [
-            ['label' => 'Search By Location', 'url' => ['/site/index'],'options'=>['class'=>'nav-location']],
-            ['label' => 'Search By Company', 'url' => ['/site/about'],'options'=>['class'=>'navglobe-pright']],
+            ['label' => 'Search By Location', 'url' => ['/listings/searchresult'],'options'=>['class'=>'nav-location']],
+            ['label' => 'Search By Company', 'url' => ['/listings/index'],'options'=>['class'=>'navglobe-pright']],
             ['label' => 'Service Providers', 'url' => ['/site/index'],'options'=>['class'=>'nav-location']],
 
             [
@@ -51,12 +51,10 @@ AppAsset::register($this);
             ],
             '&nbsp;&nbsp;',
             [
-                'label' => '<i class="fa fa-bars" aria-hidden="true"></i>&nbsp;&nbsp;  <i class="fa fa-user-circle-o" aria-hidden="true"></i>',
+                'label' => '<i class="fa fa-bars" aria-hidden="true"></i>&nbsp;&nbsp;<i class="fa fa-user-circle-o" aria-hidden="true"></i>',
                 'items' => [
-                    ['label' => 'Level 1 - Dropdown A', 'url' => '#'],
-                    '<div class="dropdown-divider"></div>',
-                    '<div class="dropdown-header">Dropdown Header</div>',
-                    ['label' => 'Level 1 - Dropdown B', 'url' => '#'],
+                    ['label' => 'Sign-Up', 'url' => '#'],
+                    ['label' => 'Login', 'url' => '#'],
                 ],
                 'options'=>['class'=>'nav-button btn btn-outline-dark']
             ],
