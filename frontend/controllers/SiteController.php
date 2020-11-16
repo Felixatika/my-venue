@@ -54,6 +54,7 @@ class SiteController extends Controller
     /**
      * {@inheritdoc}
      */
+    public $site='search';
     public function actions()
     {
         return [
