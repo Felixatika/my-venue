@@ -2,8 +2,8 @@
 
 namespace frontend\models;
 
-use common\models\User;
 use Yii;
+use common\models\User;
 
 /**
  * This is the model class for table "messages".
