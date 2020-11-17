@@ -21,14 +21,14 @@ use frontend\models\Location;
     <div class="row">
         <div class=" col-md-7 card-row">
             <div class="card-row-i">
-            <div class="d-flex justify-content-center">
-            <ol class="nav-two">
+            <div class="d-flex justify-content-center nav-enclose">
+                <ol class="nav-two">
 				<li><button>Location</button></li>
 				<li><button>Check in</button></li>
 				<li><button>Check Out</button></li>
 				<li><button>Guests</button></li>
 				<li><button id="search-button"><i class="fa fa-search" style="color: white; font-size: 2em"></i></button></li>
-			</ol>
+			    </ol>
             </div>
                 <div><p>(20+) Search results in Kiambu</p></div>
                 <div class="filters">

@@ -39,7 +39,7 @@ AppAsset::register($this);
     echo Nav::widget([
         'items' => [
             ['label' => 'Search By Location', 'url' => ['/listings/searchresult'],'options'=>['class'=>'nav-location']],
-            ['label' => 'Search By Company', 'url' => ['/listings/searchresult'],'options'=>['class'=>'navglobe-pright']],
+            ['label' => 'Search By Company', 'url' => ['/book/index'],'options'=>['class'=>'navglobe-pright']],
             ['label' => 'Service Providers', 'url' => ['/site/index'],'options'=>['class'=>'nav-location']],
 
             [
@@ -73,58 +73,57 @@ AppAsset::register($this);
         <?= $content ?>
     </div>
 </div>
-<div id="footer" class="sticky-footer">
-   <!-- Main -->
-   <div class="container-fluid">
-      <div class="alg">
-         <div class="row">
-            <div class="col-md-3">
-               <h4>ABOUT</h4>
-               <ul class="footer-links">
-                  <li><a href="<?= Url::to(['site/work'])?>" class="sign-in popup-with-zoom-anim"></i> About Us</a></li>
-               </ul>
+
+<!-- <div class="container-fluid alg foot">
+    <div id="footer">
+        <div class="alg">
+            <div class="row">
+            <div class="col-md-6">
+            <div class="title-box-2 pt-4 pt-md-0">
+                      <h5 class="title-center">
+                        Quick links
+                      </h5>
+                    </div>
+                    <div class="more-info">
+                    <ul class="footer-links">
+                        <p class="lead">
+                        <li><a href="<?= Url::to(['site/work'])?>" class="sign-in popup-with-zoom-anim"></i> About Us</a></li>
+                        <li><a href="<?= Url::to(['site/work'])?>" class="sign-in popup-with-zoom-anim"></i> Support</a></li>
+                        <li><a href="<?= Url::to(['site/work'])?>" class="sign-in popup-with-zoom-anim"></i> Sign Up</a></li>
+                        <p>
+                    </ul>
+                </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="title-box-2 pt-4 pt-md-0">
+                      <h5 class="title-left">
+                        Get in Touch
+                      </h5>
+                    </div>
+                    <div class="more-info">
+                      <p class="lead">
+                        Reach us in any convenient way below,either social media handles. We're always, checking social medias,
+                        it can take sometime, if urgent just drop your message in my direct line.
+                      </p>
+                      <ul class="list-ico">
+                        <li><span class="ion-ios-location"></span> Kenya,Nairobi</li>
+                        <li><span class="ion-ios-telephone"></span> +254-725-685-545</li>
+                        <li><span class="ion-email"></span> myVenues@gmail.com</li>
+                      </ul>
+                    </div>
             </div>
-            <div class="col-md-3">
-               <h4>COMMUNITY</h4>
-               <ul class="footer-links">
-                  <li><a href="#sign-in-dialog" class="sign-in popup-with-zoom-anim"></i> Sign Up</a></li>
-                  <li><a href="#sign-in-dialog" class="sign-in popup-with-zoom-anim"></i> Sign In</a></li>
-               </ul>
-            </div>
-            <div class="col-md-3">
-               <h4>HOST</h4>
-               <div class="text-widget">
-                  <ul class="footer-links">
-                     <li><a href="#sign-in-dialog" class="sign-in popup-with-zoom-anim"></i><span> Host Your Venue<span></a></li>
-                  </ul>
-               </div>
-            </div>
-            <div class="col-md-3">
-               <h4>SUPPORT</h4>
-                  <ul class="footer-links">
-                     <li><a href="<?= Url::to(['site/contact'])?>"class="sign-in popup-with-zoom-anim"></i><span> Contact<span></a></li>
-                  </ul>
-            </div>
-         </div>
-      </div>
-      <!-- Copyright -->
-      <div class="row">
-         <div class="col-md-12">
-                <div class="copyrights">© 2020 myVenue,Inc. All Rights Reserved. Privacy. Terms . SiteMap
+        </div>
+        <!-- Copyright -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="copyrights">© 2020 myVenue,Inc. All Rights Reserved. Privacy. Terms . SiteMap 
                     <i class="fab fa-instagram pull-right"></i>, <i class="fab fa-twitter pull-right">,</i>,<i class="fab fa-facebook-f pull-right"></i>,<i class="fa fa-globe fa-fw fa-lg pull-right"></i>'
                 </div>
-         </div>
-      </div>
-   </div>
-</div>
-
-<footer class="footer">
-    <div class="container">
-        <p class="pull-left">&copy; <?= Html::encode(Yii::$app->name) ?> <?= date('Y') ?></p>
-
-        <p class="pull-right"><?= Yii::powered() ?></p>
+            </div>
+        </div>
     </div>
-</footer>
+    </div>
+        </div> -->
 
 <?php $this->endBody() ?>
 </body>

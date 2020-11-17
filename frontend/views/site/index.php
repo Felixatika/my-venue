@@ -6,19 +6,13 @@ use yii\helpers\Url;
 
 $this->title = 'VENUES';
 ?>
-<div class="site-index">
-
-
-
-    <div class="row no-gutters serchbar">
-       
-        
-    </div>
+<div class="site-index"> 
+    
      <div class="container">
       
-            <div class="row">
-                <div class="col-lg-10 d-flex justify-content-center p-3 bg-dark rounded rounded-pill shadow-sm mb-4 ">
-                    <div class="row ">
+            <div class="row  float-center">
+                <div class="col-lg-8 d-flex justify-content-center p-2 bg-dark rounded rounded-pill shadow-sm mb-4  searches">
+                    <div class="row">
                         <div class="none col-lg-4 col-md-3 col-sm-12 p-0">
                             <input type="text" class="form-control search-slt" placeholder="What are you looking for?">
                         </div>
@@ -47,15 +41,10 @@ $this->title = 'VENUES';
             </div>
           </div>
 
-          
-
-
-   
-
     <div class="explore">
         <h1 >Venues</h1>
         <h1 >Near Me</h1>
-       <p><button type="button" class="btn btn-secondary">Explore Nearby venues</button></p>
+       <p><button type="button" class="btn btn-secondary">Explore Nearby venues</button></p><br><br><br><br>
     </div>
 
     
@@ -263,7 +252,7 @@ $this->title = 'VENUES';
 
 <div class="container-fluid text-center my-3">
     <h2>Most Visited Venues</h2>
-    <div class="row mx-auto my-auto">
+    <!-- <div class="row mx-auto my-auto">
         <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
             <div class="carousel-inner " role="listbox">
                 <div class="carousel-item active">
@@ -294,7 +283,7 @@ $this->title = 'VENUES';
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
+                 <div class="carousel-item">
                     <div class="col-md-4">
                         <div class="card card-body">
                             <img class="img-fluid" src="images/agriculture.jpg">
@@ -307,7 +296,7 @@ $this->title = 'VENUES';
                             <img class="img-fluid" src="images/rockymountains.jpg">
                         </div>
                     </div>
-                </div>
+                </div> 
             </div>
             <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
@@ -318,21 +307,65 @@ $this->title = 'VENUES';
                 <span class="sr-only">Next</span>
             </a>
         </div>
-    </div>
-   
+    </div> -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="popular-vendors">
+                <!-- <h2 class="text-center"> Meet Our Vendors</h2> -->
+            <div class="col-md-12 popular-loc">
+                <div class="row listing-list">
+            
+                    <div class="col-md-3">
+                        <div class="card-vendor"  >
+                            <img src="images/rockymountains.jpg" class="img-fluid rounded" alt="house">
+                                <h5 class="card-title">Baked Pizzeria</h5>
+            </div>
+            
+            </div>
+            
+
+            <div class="col-md-3">
+            <div class="card-vendor" >
+            <img src="images/agriculture.jpg" class="img-fluid rounded" alt="caterers">
+           <h5 class="card-title">Val</h5>
+            </div>
+             
+            </div>
+            
+            
+            <div class="col-md-3">
+            <div class="card-vendor" >
+            <img src="images/landscape.jpg" class="img-fluid rounded" alt="house">
+            <h5 class="card-title">Rose and Sons</h5>
+            </div>
+             
+            </div>
+            <div class="col-md-3">
+            <div class="card-vendor"  >
+            <img src="images/new-zealand.jpg" class="img-fluid rounded" alt="house">
+            <h5 class="card-title">Hotel Governdor</h5>
+            </div>
+              
+            </div>
+            </div>
+            
+       
+
+            
+            </div>
 </div>
 
     <div class="container-fluid">
-    <div class="row">
-    <div class="popular-vendors">
-    <h2 class="text-center"> Meet Our Vendors</h2>
+        <div class="row">
+            <div class="popular-vendors">
+                <h2 class="text-center"> Meet Our Vendors</h2>
             <div class="col-md-12 popular-loc">
-            <div class="row listing-list">
+                <div class="row listing-list">
             
-            <div class="col-md-3">
-            <div class="card-vendor"  >
-            <img src="images/photographs.jpg" class="img-fluid rounded" alt="house">
-          <h5 class="card-title">Photography</h5>
+                    <div class="col-md-3">
+                        <div class="card-vendor"  >
+                            <img src="images/photographs.jpg" class="img-fluid rounded" alt="house">
+                                <h5 class="card-title">Photography</h5>
             </div>
             
             </div>

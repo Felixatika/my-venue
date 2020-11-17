@@ -5,7 +5,7 @@
 .map-row{
     position: fixed !important;
      margin-left: 40em; 
-     background-color: rgba(0,0,0,0.1);
+     
 }
 #search-results-map{
     width:  100%;
@@ -18,15 +18,16 @@
 /* searchbar */
 .nav-two li{
 	display: inline-flex;
-	padding-bottom: 2em;
 
 }
-.nav-two{
+
+.nav-two {
 	background-color: rgba(0,0,0,0.1) !important;
 	width: 75%;
 	height: 4.5em;
     border-radius: 4em;
     margin-top: 5em;
+    
 }
 .nav-two button{
  width: 6em;
@@ -35,6 +36,7 @@
  font-size: 0.8em;
  background-color: #0000;
  border-radius: 2em;
+ 
 }
 .nav-two button:hover{
 	background-color: rgb(255,255,255, 0.5);
