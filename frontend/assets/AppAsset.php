@@ -15,7 +15,7 @@ class AppAsset extends AssetBundle
         'css/site.css',
         'css/slider.css',
         'css/custom.css',
-        'css/searchresult.css',
+        // 'css/searchresult.css',
     ];
     public $js = [
         'css/carousel.js',

@@ -16,56 +16,20 @@ use frontend\models\Location;
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 
-<div class=" container listing-index">
-        <!-- map and listings go here -->
-    <div class="row">
-        <div class=" col-md-7 card-row">
-            <div class="card-row-i">
-            <div class="d-flex justify-content-center nav-enclose">
-                <ol class="nav-two">
-				<li><button>Location</button></li>
-				<li><button>Check in</button></li>
-				<li><button>Check Out</button></li>
-				<li><button>Guests</button></li>
-				<li><button id="search-button"><i class="fa fa-search" style="color: white; font-size: 2em"></i></button></li>
-			    </ol>
-            </div>
-                <div><p>(20+) Search results in Kiambu</p></div>
-                <div class="filters">
-                    <div id="filter-icon"><span style="font-size: 2em; color: Tomato; padding:1em;"><i class="fas fa-filter"></i></span></div>
-                    <div class="input-group-prepend">
-                        <button class="btn btn-outline-info" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Occasion</button>
-                        <div class="dropdown-menu">
-                            <div class="form-check">
-                                <div><input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                <label class="form-check-label" for="defaultCheck1"> Weddings</label></div>
-                                <div><input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                <label class="form-check-label" for="defaultCheck1"> Baby Showers</label></div>
-                                <div><input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                <label class="form-check-label" for="defaultCheck1"> Graduation</label></div>
-                                <div><input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                <label class="form-check-label" for="defaultCheck1"> Photoshoot</label></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="input-group-prepend">
-                        <button class="btn btn-outline-info" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Price</button>
-                        <div class="dropdown-menu">
-                        <form>
-                         <div class="form-group">
-                             <label for="formControlRange">Price range</label>
-                            <input type="range" class="form-control-range" id="formControlRange" min="1" max="10000">
-                            <p>KSH: <span id="priceSlider"></span></p>
-                         </div>
-                        </form>
-                        </div>
-                    </div>
-                    
-                    <div class="input-group-prepend">
-                        <button class="btn btn-outline-info" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Others</button>
-                        <div class="dropdown-menu">
-                            <div class="form-check">
+<div class="row">
+    <div class="col-md-7">
+        <div class="row">
+            <div class="col-md-12 sr-margin">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <div class="sr-header">
+                            <span class="sr-headerspan">76 stays · Nov 20 - 22 · 2 guests</span>
+                            <h1>Stays in Nyeri</h1>
+                        <div class="sr-header-buttons">
+                            <div class="input-group-prepend">
+                                <button class="btn btn-outline-secondary" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ammenities</button>
+                                <div class="dropdown-menu">
+                                <div class="form-check">
                                 <div><input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                                 <label class="form-check-label" for="defaultCheck1"> Tents</label></div>
                                 <div><input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
@@ -74,104 +38,168 @@ use frontend\models\Location;
                                 <label class="form-check-label" for="defaultCheck1"> WIFI</label></div>
                                 <div><input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                                 <label class="form-check-label" for="defaultCheck1"> Parking</label></div>
+                                </div>
+                                </div>
+                            </div>
+                            
+                            <div class="input-group-prepend">
+                                <button class="btn btn-outline-secondary" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Location</button>
+                                <div class="dropdown-menu">
+                                <div class="form-check">
+                                <div><input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1"> Tents</label></div>
+                                <div><input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1"> Pool</label></div>
+                                <div><input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1"> WIFI</label></div>
+                                <div><input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1"> Parking</label></div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Others</button>
+                                <div class="dropdown-menu">
+                                <div class="form-check">
+                                <div><input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1"> Tents</label></div>
+                                <div><input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1"> Pool</label></div>
+                                <div><input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1"> WIFI</label></div>
+                                <div><input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1"> Parking</label></div>
+                                </div>
+                            </div>
+                            <div class="input-group-prepend">
+                                <button class="btn btn-outline-info" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Price</button>
+                                    <div class="dropdown-menu">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="formControlRange">Price range</label>
+                                                <input type="range" class="form-control-range" id="formControlRange" min="1" max="10000">
+                                                <p>KSH: <span id="priceSlider"></span></p>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="card-row-ii">
-                <div class="row-listing-list-sb">
-                    <div class="col-md-6 single-listing">
-                        <div class="card" style="width: 18rem;">
+                </li><hr>
+                
+                <a href='javascript:void(0)' onclick='window.location = "../book/index"' class="col-md-8 d-flex">
+                <li class="list-group-item">
+                    <div class="card">
+                        <div class="card-horizontal">
+                            <div class="img-square-wrapper">
+                                <img class="sr-card-image" src="../images/flower.jpg" alt="Card image cap">
+                            </div>
                             <div class="card-body">
-                                <img src="../css/images/wine.jpg" alt="baked pizzeria"><br> 
-                            </div>
-                        </div>
-                        <div class="listing-info">
-                            <div>
-                                <h5 class="card-title">Baked Pizzeria</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">Weddings</h6>
-                                <p>&#9733 &#9734 &#9734 &#9734 &#9734</p>
-                                <a href="#" class="card-link">Ksh.1000</a> 
-                            </div>
-                            <div class="listing-info-extra">
-                                <span class="float-right like-icon">
-                                <i class="fas fa-heart" style="color:tomato;"></i>
-                                </span>     
-                            </div>   
-                        </div>
-                    </div>
-                    <div class="col-md-6 single-listing">
-                        <div class="card" style="width: 18rem;">
-                            <div class="card-body">
-                                <img src="../css/images/wine.jpg" alt="baked pizzeria"><br> 
-                            </div>
-                        </div>
-                        <div class="listing-info">
-                            <div>
                                 <h5 class="card-title">Baked Pizzeria</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Weddings</h6>
-                                <p>&#9733 &#9734 &#9734 &#9734 &#9734</p>
-                                <a href="#" class="card-link">Ksh.1000</a> 
-                            </div>
-                            <div class="listing-info-extra">
-                                <span class="float-right">
-                                <i class="far fa-heart"></i>
-                                </span>     
-                            </div>   
-                        </div>
-                    </div>
-                </div>
-                <div class="row-listing-list-sb">
-                <div class="col-md-6 single-listing">
-                        <div class="card" style="width: 18rem;">
-                            <div class="card-body">
-                                <img src="../css/images/wine.jpg" alt="baked pizzeria"><br> 
-                            </div>
-                        </div>
-                        <div class="listing-info">
-                            <div>
-                                <h5 class="card-title">Baked Pizzeria</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Weddings</h6>
-                                <p>&#9733 &#9734 &#9734 &#9734 &#9734</p>
-                                <a href="#" class="card-link">Ksh.1000</a> 
-                            </div>
-                            <div class="listing-info-extra">
-                                <span class="float-right">
-                                <i class="far fa-heart"></i>
-                                </span>     
-                            </div>   
-                        </div>
-                    </div>
-                    <div class="col-md-6 single-listing">
-                        <div class="card" style="width: 18rem;">
-                            <div class="card-body">
-                                <img src="../css/images/wine.jpg" alt="baked pizzeria"><br> 
-                            </div>
-                        </div>
-                        <div class="listing-info">
-                            <div>
-                                <h5 class="card-title">Baked Pizzeria</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Weddings</h6>
-                                <p>&#9733 &#9734 &#9734 &#9734 &#9734</p>
-                                <a href="#" class="card-link">Ksh.1000</a> 
-                            </div>
-                            <div class="listing-info-extra">
-                                <span class="float-right ">
-                                <i class="far fa-heart"></i>
+                                <p>&mdash;</p>
+                                <p>70 guests · 2 tents</p>
+                                <p>&#9733 4.5 (20)</p>
                                 
-                                </span>     
-                            </div>   
+                            </div>
+                            <div>
+                                <span class="float-right like-icon">
+                                <i class="fas fa-heart" style="color:tomato;"></i><br><br><br>
+                                <a href="#" class="card-link">Ksh.1000</a>
+                                </span>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </li><hr>
+                </a>
+                <a href='javascript:void(0)' onclick='window.location = "../book/index"' class="col-md-8 d-flex">
+                <li class="list-group-item">
+                    <div class="card">
+                        <div class="card-horizontal">
+                            <div class="img-square-wrapper">
+                                <img class="sr-card-image" src="../images/flower.jpg" alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-muted">Weddings</h6>
+                                <h5 class="card-title">Baked Pizzeria</h5>
+                                <p>&mdash;</p>
+                                <p>70 guests · 2 tents</p>
+                                <p>&#9733 4.5 (20)</p>
+                                
+                            </div>
+                            <div>
+                                <span class="float-right like-icon">
+                                <i class="fas fa-heart" style="color:tomato;"></i><br><br><br>
+                                <a href="#" class="card-link">Ksh.1000</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </li><hr>
+                </a>
+                <a href='javascript:void(0)' onclick='window.location = "../book/index"' class="col-md-8 d-flex">
+                <li class="list-group-item">
+                    <div class="card">
+                        <div class="card-horizontal">
+                            <div class="img-square-wrapper">
+                                <img class="sr-card-image" src="../images/flower.jpg" alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-muted">Weddings</h6>
+                                <h5 class="card-title">Baked Pizzeria</h5>
+                                <p>&mdash;</p>
+                                <p>70 guests · 2 tents</p>
+                                <p>&#9733 4.5 (20)</p>
+                                
+                            </div>
+                            <div>
+                                <span class="float-right like-icon">
+                                <i class="fas fa-heart" style="color:tomato;"></i><br><br><br>
+                                <a href="#" class="card-link">Ksh.1000</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </li><hr>
+                </a>
+                <a href='javascript:void(0)' onclick='window.location = "../book/index"' class="col-md-8 d-flex">
+                <li class="list-group-item">
+                    <div class="card">
+                        <div class="card-horizontal">
+                            <div class="img-square-wrapper">
+                                <img class="sr-card-image" src="../images/flower.jpg" alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-muted">Weddings</h6>
+                                <h5 class="card-title">Baked Pizzeria</h5>
+                                <p>&mdash;</p>
+                                <p>70 guests · 2 tents</p>
+                                <p>&#9733 4.5 (20)</p>
+                                
+                            </div>
+                            <div>
+                                <span class="float-right like-icon">
+                                <i class="fas fa-heart" style="color:tomato;"></i><br><br><br>
+                                <a href="#" class="card-link">Ksh.1000</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </li><hr>
+                </a>
+                </ul>
             </div>
-        </div> 
-        <div class="col-md-7 map-row">   
-                <div id="search-results-map"></div> 
-        </div>    
+        </div>
+    </div>
+
+    <div class="col-md-5">
+        <div id="search-results-map"></div>
     </div>
 </div>
+
+
+
 
 <script type="text/javascript">
 

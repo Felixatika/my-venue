@@ -113,14 +113,15 @@ AppAsset::register($this);
                     </div>
             </div>
         </div>
-        <!-- Copyright -->
-        <div class="row">
+         Copyright 
+
+         <div class="row">
             <div class="col-md-12">
                 <div class="copyrights">© 2020 myVenue,Inc. All Rights Reserved. Privacy. Terms . SiteMap 
                     <i class="fab fa-instagram pull-right"></i>, <i class="fab fa-twitter pull-right">,</i>,<i class="fab fa-facebook-f pull-right"></i>,<i class="fa fa-globe fa-fw fa-lg pull-right"></i>'
                 </div>
             </div>
-        </div>
+        </div> 
     </div>
     </div>
         </div> -->
