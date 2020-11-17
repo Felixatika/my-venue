@@ -54,6 +54,7 @@ class SiteController extends Controller
     /**
      * {@inheritdoc}
      */
+    public $site='search';
     public function actions()
     {
         return [
@@ -142,6 +143,7 @@ class SiteController extends Controller
      */
     public function actionAbout()
     {
+        // $this->layout ='main2.php';
         return $this->render('about');
     }
 
