@@ -1,9 +1,30 @@
 .navglobe-pright{
-	padding-right: 29px;
+	padding-right: 29px
+}
+
+.nav-location{
+	padding-left: 29px;
+	padding-right: 29px
+}
+
+.nav-button{
+	height: 50px;
+	border-radius: 25px;
+}
+
+.nav-side{
+	padding-left: 260px;
+}
+
+/* nav-button li:hover{
+    background-color: yellow !important;
+} */
+
+/* .navglobe-pright{
+	padding-right: 290px;
 }
 .nav-location{
-	padding-left: 20px;
-	margin-right: 50px;
+	padding-left: 200px;
 }
 .nav-button{
 	height: 50px;
@@ -21,10 +42,12 @@
 	color: #F91942;
 
 }
+
 .explore h1{
-   font-size: 90px;
-   line-height: 105px;
-   color: #000000;
+	font-size: 90px;
+	line-height: 105px;
+	color:black;
+
 }
 
 
@@ -160,7 +183,6 @@
 	display: inline-block;
 	margin: 0;
 	padding: 0;
-	float: left;
 	margin-right: 4px;
 	position: relative;
 }
@@ -276,6 +298,7 @@
   background-size: cover;
 }
 
+.message-reply button { border-radius: 4px; margin-top: 5px; }
 
 .search-sec{
     padding: 2rem;

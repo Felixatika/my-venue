@@ -18,6 +18,7 @@ class AppAsset extends AssetBundle
         'css/searchresult.css',
     ];
     public $js = [
+        'js/custom.js', 
         'css/carousel.js',
          'js/map.js'
     ];
