@@ -17,22 +17,9 @@ use frontend\models\Location;
 
 
 <div class=" container listing-index">
-    <!-- <div class="row">
-        <div class="container float-right">
-            <div class="d-flex justify-content-center">
-            <ol class="nav-two">
-				<li><button>Location<br>Where are you going?</button></li>
-				<li><button>Check in<br>Add dates</button></li>
-				<li><button>Check Out<br>Add dates</button></li>
-				<li><button>Guests<br>Add guests</button></li>
-				<li><button id="search-button"><i class="fa fa-search" style="color: white; font-size: 2em"></i></button></li>
-			</ol>
-            </div>
-        </div>
-    </div> -->
         <!-- map and listings go here -->
     <div class="row">
-        <div class=" col-md-5 card-row">
+        <div class=" col-md-7 card-row">
             <div class="card-row-i">
             <div class="d-flex justify-content-center">
             <ol class="nav-two">

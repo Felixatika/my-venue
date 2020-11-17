@@ -1,55 +1,14 @@
-
-.navglobe-pright{
-	padding-right: 29px;
+.card-row{
+    width: 100%;
 }
-.nav-location{
-	padding-left: 20px;
-	margin-right: 50px;
-}
-.nav-button{
-	height: 50px;
-	border-radius: 25px;
-}
-/* .nav-button .btn-outline-dark {
-  background-color: yellow !important;
-} */
-
-.explore{
-	padding-top:200px;
-}
-.explore h1{
-   font-size: 90px;
-   line-height: 105px;
-   color: #000000;
-}
-.serchbar{
-	padding-top:180px;
-}
-.serchbar input{
-	height: 80px;
-	border-radius: 25px;
-}
-.serchbar button{
-	height: 80px;
-	border-radius: 25px;
-}
-/* body {
- background-image: url("images/bg.svg");
-   -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-} */
-/* style the map */
 
 .map-row{
     position: fixed !important;
      margin-left: 40em; 
-
-
+     background-color: rgba(0,0,0,0.1);
 }
 #search-results-map{
-    width:  480px;
+    width:  100%;
     height: 600px;
     border-radius: 5px;
     border:#000000;
@@ -59,14 +18,15 @@
 /* searchbar */
 .nav-two li{
 	display: inline-flex;
-	padding: none;
+	padding-bottom: 2em;
 
 }
 .nav-two{
-	background-color: rgb(255,255,255,0.4) !important;
-	width: 100%;
-	height: 5em;
-	border-radius: 4em;
+	background-color: rgba(0,0,0,0.1) !important;
+	width: 75%;
+	height: 4.5em;
+    border-radius: 4em;
+    margin-top: 5em;
 }
 .nav-two button{
  width: 6em;
