@@ -11,16 +11,16 @@ $this->title = 'VENUES';
      <div class="container">
       
             <div class="row  float-center">
-                <div class="col-lg-8 d-flex justify-content-center p-2 bg-dark rounded rounded-pill shadow-sm mb-4  searches">
+                <div class="col-lg-8 d-flex justify-content-center p-1 bg-light rounded rounded-pill shadow-sm mb-4  searches">
                     <div class="row">
-                        <div class="none col-lg-4 col-md-3 col-sm-12 p-0">
-                            <input type="text" class="form-control search-slt" placeholder="What are you looking for?">
+                        <div class="col-lg-4 col-md-3 col-sm-12 p-0">
+                            <input type="text" class="form-control search-slt  border-0" placeholder="What are you looking for?">
                         </div>
-                        <div class="none col-lg-3 col-md-2 col-sm-12 p-0" >
-                            <input type="text" class="form-control search-slt" placeholder="Location">
+                        <div class="  col-lg-3 col-md-2 col-sm-12 p-0" >
+                            <input type="text" class="form-control search-slt border-0 " placeholder="Location">
                         </div>
-                        <div class="none col-lg-4 col-md-3 col-sm-12 p-0">
-                          <select class="form-control search-slt" id="exampleFormControlSelect1">
+                        <div class="col-lg-4 col-md-3 col-sm-12 p-0">
+                          <select class="form-control search-slt border-0 " id="exampleFormControlSelect1">
                                     <option>All Categories</option>
                                     <option>Hotels</option>
                                     <option>Events</option>
@@ -30,8 +30,8 @@ $this->title = 'VENUES';
                                     <option>Open Spaces</option>
                                     </select>
                         </div>
-                        <div class="col-lg-1 col-md-2 col-sm-12 p-0">
-                            <button type="button" class="btn btn-danger wrn-btn"><i class="fa fa-search"></i></button></button>
+                        <div class="col-lg-1 col-md- col-sm-12 p-0 rounded">
+                            <button type="button" class="btn btn-danger wrn-btn rounded-circle"><i class="fa fa-search"></i></button></button>
                         </div>
                     </div>
                 </div>
@@ -44,7 +44,7 @@ $this->title = 'VENUES';
     <div class="explore">
         <h1 >Venues</h1>
         <h1 >Near Me</h1>
-       <p><button type="button" class="btn btn-secondary">Explore Nearby venues</button></p><br><br><br><br>
+       <p><button type="button" class="btn btn-secondary">Explore Nearby venues</button></p>
     </div>
 
     

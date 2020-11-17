@@ -34,9 +34,7 @@
   background-color: yellow !important;
 }
 
-.explore{
-	padding-top:150px;
-	padding-left: 100px;
+
 }
 .explore button.active {
 	color: #F91942;
@@ -62,6 +60,10 @@
 
 
 /* titles-listing */
+.explore{
+	
+	padding-left: 100px;
+}
 #titlebar.listing-titlebar span a,
 #titlebar.listing-titlebar span {
 	font-size: 17px;
